@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.List;
 
 public class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<List<String>>();
-        HashMap<String, List<String>> hm = new HashMap<String, List<String>>();
+        Map<String, List<String>> hm = new HashMap<String, List<String>>();
 
         for (int i = 0; i < strs.length; i++) {
             String sorted = sortedString(strs[i]);
