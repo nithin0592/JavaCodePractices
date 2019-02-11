@@ -25,9 +25,9 @@ class Solution {
             hm.put('u', 'u');
 
             // converting input string to lower case. make sure cover, if there are any upper case characters in the string
-            S.toLowerCase();
+            String result = S.toLowerCase();
             for (int i = 0; i < lengthOfTheString; i++) {
-                if (hm.containsKey(S.charAt(i))) {
+                if (hm.containsKey(result.charAt(i))) {
                     counter++;
                 }
             }
